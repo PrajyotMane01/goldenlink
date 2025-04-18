@@ -131,7 +131,7 @@ export default function Home() {
             style={{ transform: 'translateY(1px)' }}
           >
             <motion.path
-              fill="#3c4a2f"
+              fill="#EF4444"
               initial={{
                 d: "M0,400L60,400C120,400,240,400,360,400C480,400,600,400,720,400C840,400,960,400,1080,400C1200,400,1320,400,1380,400L1440,400L1440,400L1380,400C1320,400,1200,400,1080,400C960,400,840,400,720,400C600,400,480,400,360,400C240,400,120,400,60,400L0,400Z",
               }}
@@ -143,7 +143,7 @@ export default function Home() {
           </svg>
         </motion.div>
         {/* Our Services Section */}
-        <section className="pt-0 pb-16 px-6 bg-[#3c4a2f]">
+        <section className="pt-0 pb-16 px-6 bg-[#EF4444]">
           <div className="container mx-auto">
             <motion.h2
               className="text-white text-3xl md:text-4xl font-light mb-12"
@@ -219,7 +219,7 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <p>Micromanaging reverberation of sound. Built to exacting standards, with first-rate protection.</p>
-                <Button variant="outline" className="mt-4 border-white text-white hover:bg-white hover:text-[#3c4a2f] rounded-full px-6">
+                <Button variant="outline" className="mt-4 border-white text-[#3c4a2f] hover:bg-white hover:text-[#3c4a2f] rounded-full px-6">
                   View all Services
                 </Button>
               </motion.div>
