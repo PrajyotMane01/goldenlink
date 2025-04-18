@@ -24,8 +24,8 @@ export function Navbar() {
             Contact
           </Link>
         </div>
-        <div className="ml-auto flex items-center space-x-4">
-          <Button variant="outline">Get Quote</Button>
+        <div className="ml-auto flex items-center space-x-4 ">
+          <Button className="bg-red-500 text-white" variant="outline">Get Quote</Button>
         </div>
       </div>
     </nav>

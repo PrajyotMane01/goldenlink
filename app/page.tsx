@@ -1,4 +1,5 @@
 "use client"
+import { ArrowRight, MessageSquare } from "lucide-react"
 
 import Link from "next/link"
 import Image from "next/image"
@@ -12,27 +13,78 @@ import Footer from "@/components/footer"
 
 export default function Home() {  
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Main content area */}
+    <div>
+<div className="flex flex-col min-h-screen  bg-cover bg-center">
+{/* Main content area */}
       <main className="flex-1 pt-24">
         {/* Hero Section */}
         <motion.section
-          className="relative pb-24 md:pb-32 pt-24 md:pt-32 px-6"
+          className="relative pb-24 md:pb-32 pt-24 md:pt-32 px-6 "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
           <div className="container mx-auto">
           <motion.h1
-  className=" text-5xl md:text-7xl lg:text-8xl font-light leading-tight max-w-5xl"
+  className=" text-5xl md:text-7xl lg:text-6xl font-light leading-tight max-w-5xl"
   initial={{ y: 50, opacity: 0 }}
   animate={{ y: 0, opacity: 1 }}
   transition={{ duration: 0.8, delay: 0.2 }}
 >
-  <span className="block">Golden Link</span>
-  <span className="block mt-8">INTERIOR FIT OUT</span>
-</motion.h1>
 
+</motion.h1 >
+<div className="flex gap-[550px]">
+  <div>
+  <div className="block text-4xl font-bold leading-relaxed mb-12">
+    <span>20+ Years 1000+ Projects.</span> <span>One Standard: Excellence</span>
+  </div>
+
+  From villas to offices, we bring your vision to life — end to end. Fit-Out, MEP & Joinery solutions trusted across the UAE.
+
+</div>
+
+  
+  <div className=" ">
+         
+
+
+          <div className="space-y-4">
+            <p className="text-sm text-gray-600">Tell us a little about your project and we’ll get back to you within 24 hours.
+            </p>
+            <div className="space-y-2">
+              <input
+                type="text"
+                placeholder="First Name"
+                className="w-full border-b border-gray-300 py-2 text-sm focus:outline-none focus:border-gray-500"
+              />
+              <input
+                type="text"
+                placeholder="Email Address"
+                className="w-full border-b border-gray-300 py-2 text-sm focus:outline-none focus:border-gray-500"
+              />
+                <input
+                type="text"
+                placeholder="Phone Number"
+                className="w-full border-b border-gray-300 py-2 text-sm focus:outline-none focus:border-gray-500"
+              />
+              <div className="flex items-center">
+                <input
+                  type="email"
+                  placeholder="Service"
+                  className="w-full border-b border-gray-300 py-2 text-sm focus:outline-none focus:border-gray-500"
+                />
+                {/* <button className="ml-2 transition-transform hover:translate-x-1">
+                  <ArrowRight className="h-4 w-4" />
+                </button> */}
+              </div>
+              <div className="ml-auto flex items-center space-x-4 ">
+          <Button className="bg-red-500 text-white" variant="outline">Get Started</Button>
+        </div>
+            </div>
+          </div>
+          
+        </div>
+  </div>
             <div className="mt-16 md:mt-24 flex flex-col md:flex-row justify-between items-start">
               <motion.p
                 className=" text-xl max-w-md mb-8 md:mb-0"
@@ -40,9 +92,8 @@ export default function Home() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                We help transform spaces into places 
-                <br/>
-                That inspire, engage and connect people.
+              
+               
                 </motion.p>
 
               <motion.div
@@ -52,26 +103,19 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
                 <div className="text-right">
-                  <p className="text-xs uppercase tracking-wider">BUILT TO SPEC</p>
+                  {/* <p className="text-xs uppercase tracking-wider">BUILT TO SPEC</p> */}
                 </div>
                 <div className="text-right">
-                  <p className="text-xs uppercase tracking-wider ">INDIGENOUS OWNED SINCE. 2002</p>
-                  <p className="text-xs uppercase tracking-wider text-red-500">ISO CERTIFIED</p>
+                  <p className="text-xs uppercase tracking-wider ">Crafting interiors that last — Since 2003</p>
+                  <p className="text-xs uppercase tracking-wider text-red-500">ISO Certified | UAE-Born & Operated | Trusted by Leading Developers</p>
                 </div>
-                <div>
-                  <Image
-                    src="/placeholder.svg?height=60&width=60"
-                    alt="Supply Nation Certified"
-                    width={60}
-                    height={60}
-                    className="ml-auto"
-                  />
-                </div>
+            
               </motion.div>
             </div>
           </div>
 
         </motion.section>
+        
 
         {/* Wave Section */}
         <motion.div
@@ -200,7 +244,7 @@ export default function Home() {
               CONTACT US
             </motion.h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Contact Information */}
               <motion.div
                 className="space-y-6"
@@ -294,6 +338,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }
