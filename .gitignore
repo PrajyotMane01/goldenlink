@@ -87,10 +87,6 @@ public/*.png
 public/*.jpg
 public/*.svg
 
-# Tailwind
-postcss.config.mjs
-tailwind.config.ts
-
 # TypeScript
 *.tsbuildinfo
 
