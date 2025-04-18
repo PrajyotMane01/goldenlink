@@ -1,0 +1,98 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+jspm_packages/
+
+# Build output
+build/
+dist/
+.next/
+out/
+
+# Static files
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Miscellaneous
+*.lock
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.swo
+*.swp
+*.tmp
+*.temp
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+
+# Test output
+*.lcov
+
+# Miscellaneous
+*.log
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.swo
+*.swp
+*.tmp
+*.temp
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Public files
+public/*.png
+public/*.jpg
+public/*.svg
+
+# Tailwind
+postcss.config.mjs
+tailwind.config.ts
+
+# TypeScript
+*.tsbuildinfo
+
+# Next.js
+.next/
